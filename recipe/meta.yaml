@@ -1,5 +1,5 @@
 {% set name = "cwl-upgrader" %}
-{% set version = "1.2.3" %}
+{% set version = "1.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cwl-upgrader-{{ version }}.tar.gz
-  sha256: 3372b87af6ab6154716462f97561620eecd786798a68a2a64a98529340f52e1f
+  sha256: b25fc236407343d44cc830ac3f63eed395b8d872fc7e17db92cde583d4a3b2ec
 
 build:
   noarch: python
@@ -37,7 +37,6 @@ test:
 
 about:
   home: https://github.com/common-workflow-language/cwl-upgrader
-  summary: Common Workflow Language standalone document upgrader
   license: Apache-2.0
   license_file:
     - LICENSE.txt
