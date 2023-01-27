@@ -32,8 +32,10 @@ test:
   commands:
     - pip check
     - cwl-upgrader --help
+    - python -m pytest -n auto --pyargs cwlupgrader
   requires:
     - pip
+    - pytest-xdist
 
 about:
   home: https://github.com/common-workflow-language/cwl-upgrader
