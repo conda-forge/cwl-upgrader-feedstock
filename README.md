@@ -1,11 +1,11 @@
-About cwl-upgrader
-==================
+About cwl-upgrader-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cwl-upgrader-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/common-workflow-language/cwl-upgrader
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cwl-upgrader-feedstock/blob/main/LICENSE.txt)
 
 Summary: This is a standalone upgrader for Common Workflow Language documents from version draft-3, v1.0, and v1.1 to v1.2
 
