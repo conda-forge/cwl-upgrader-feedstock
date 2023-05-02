@@ -14,7 +14,7 @@ build:
   entry_points:
     - cwl-upgrader = cwlupgrader.main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - ruamel.yaml >=0.16.0,<0.17.22
+    - ruamel.yaml >=0.16.0,<0.18
     - schema-salad
     - setuptools
 
