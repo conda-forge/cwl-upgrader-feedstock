@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cwl-upgrader-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cwl-upgrader-{{ version }}.tar.gz
   sha256: 57b4b6fea246ae96ac28dc4e65b28899e50a8be430957fbd97f25bbe2dfa468a
 
 build:
@@ -14,15 +14,16 @@ build:
   entry_points:
     - cwl-upgrader = cwlupgrader.main:main
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - setuptools
+    - python {{ python_min }}
   run:
-    - python >=3.6
-    - ruamel.yaml >=0.16.0,<0.17.22
+    - python >={{ python_min }}
+    - ruamel.yaml >=0.16.0,<0.19
     - schema-salad
     - setuptools
 
@@ -36,6 +37,7 @@ test:
   requires:
     - pip
     - pytest-xdist
+    - python {{ python_min }}
 
 about:
   home: https://github.com/common-workflow-language/cwl-upgrader
