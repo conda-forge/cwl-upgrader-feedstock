@@ -19,10 +19,11 @@ build:
 requirements:
   host:
     - pip
+    - setuptools
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - ruamel.yaml >=0.16.0,<0.17.22
+    - ruamel.yaml >=0.16.0,<0.19
     - schema-salad
     - setuptools
 
