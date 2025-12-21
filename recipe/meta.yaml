@@ -1,5 +1,5 @@
 {% set name = "cwl-upgrader" %}
-{% set version = "1.2.12" %}
+{% set version = "1.2.14" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 0d4e514d32d96b60c5300de9baa30a583b09066c9aa78dd6aa7744164d72dc5c
+  sha256: a20de876a666bb1510d37310d4225fc6df6572e314d1cb6c2202b742a0d76db6
 
 build:
   noarch: python
